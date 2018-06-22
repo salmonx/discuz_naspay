@@ -1,0 +1,58 @@
+<p>设置上链： 保存您的设置到区块链网络中</p>
+<p>当前状态： <span id="status">{$status}</span></p>
+<br>
+
+<input type="hidden" id="address" value="{$address}">
+<input type="hidden" id="ratio" value="{$ratio}">
+
+
+<button id="save_online" onclick="save_online();">设置上链</button>
+<br>
+
+<script type="text/javascript" src="source/plugin/naspay/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="source/plugin/naspay/assets/js/nebulas.js"></script>
+<script type="text/javascript" src="source/plugin/naspay/assets/js/nebPay.js"></script>
+<script type="text/javascript" src="source/plugin/naspay/assets/js/myapp.js"></script>
+<script type="text/javascript" src="source/plugin/naspay/assets/js/bignumber.js"></script>
+<script type="text/javascript">
+    //var jq = $.noConflict();
+
+    "use strict";
+
+    var value = "0";
+    var nonce = "0";
+    var gas_price = "1000000";
+    var gas_limit = "2000000";
+
+    var nebulas = require("nebulas");
+    var neb = new nebulas.Neb();
+    var NebPay = require("nebpay");
+    var nebPay = new NebPay();
+
+    var intervalQuery;
+    var callbackUrl = 'https://mainnet.nebulas.io';
+
+
+    function save_online(){
+
+        var callFunction = "create_credit";
+        var address = document.getElementById("address").value;
+        var ratio = document.getElementById("ratio").value;
+        var price = 1/ratio;
+
+        console.log(address + ":" + price);
+        var callArgs = JSON.stringify([price]);
+        
+        var serialNumber = nebPay.call(dappAddress, value, callFunction, callArgs, {
+            listener: cb_create_credit, 
+            callback: callbackUrl
+        });
+    }
+
+    function cb_create_credit(resp){
+        alert("支付中...支付成功后请手动刷新本页面");
+        console.log(resp);
+    }
+
+
+</script>

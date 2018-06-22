@@ -1,0 +1,52 @@
+<!--{template common/header}-->
+	<div id="pt" class="bm cl">
+		<div class="z">
+			<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php">{$_G[setting][navs][2][navname]}</a><em>&raquo;</em><a href="plugin.php?id=naspay:recharge">{lang naspay:Recharge record}</a>
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" href="source/plugin/naspay/assets/css/app.css?{VERHASH}" />
+<style>
+.tpay-left-info-line .tpay-left-bottom-icon {
+    background: none;
+}
+</style>
+<div class="tpay-inde-main">
+	<div class="wp">
+		<div class="tpay-inde-main-wp">
+			<!--{subtemplate naspay:thinfellpay_left}-->
+			<div class="tpay-inde-main-r">
+					<ul class="tpay-inde-main-r-nav">
+						<li><a href="plugin.php?id=naspay:recharge&do=index" >{lang naspay:Integral recharge}</a></li>
+						<li class="on"><a href="plugin.php?id=naspay:recharge&do=record">{lang naspay:lang68}</a></li>
+					</ul>
+					<div class="tbmu bw0">
+						<p>{lang naspay:lang21}</p>
+					</div>
+					<table summary="{lang memcp_credits_log_payment}" cellspacing="0" cellpadding="0" class="dt">
+						<tr>
+							<th>{lang naspay:lang67}</th>
+							<th>{lang naspay:lang22}</th>
+							<th>{lang naspay:lang26}</th>
+							<th>{lang naspay:lang07}</th>
+						</tr>
+						{loop $list $k $v}
+
+							<tr>
+								<td style="text-align: left;">{$v['subject']}</td>
+								<td>{eval echo date("Y-m-d H:i:s",$v['creation_time']);}</td>
+								<td>{$stater[$v['state']]}</td>
+								<td>{$v['paytype']}</td>
+							</tr>
+
+						{/loop}
+					</table>
+					<div style="padding-top:10px;overflow: hidden;padding-bottom: 10px;">
+					{$multipage}
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wp">
+<!--{template common/footer}-->

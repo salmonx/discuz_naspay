@@ -1,0 +1,26 @@
+<div class="tpay-inde-main-l">
+	<div class="tpay-inde-main-l-avatar">
+		{avatar($_G['uid'],middle)}
+		<a href="home.php?mod=spacecp&ac=profile" target="_blank"><div class="tpay-left-mask"></div></a>
+	</div>
+	<div class="tpay-inde-main-l-box">
+		<div class="tpay-inde-main-l-username">
+			<a href="home.php?mod=space&uid={$_G['uid']}" target="_blank">{$_G['username']}</a>
+		</div>
+		<div class="tpay-inde-main-l-group">
+			<div class="tpay-inde-main-l-fl">{lang naspay:lang51}</div>
+			<div class="tpay-inde-main-l-fl"><a href="home.php?mod=spacecp&ac=usergroup" target="_blank">{$_G[group][grouptitle]}</a></div>
+		</div>
+		<div class="tpay-inde-main-l-credit">
+			<div class="tpay-inde-main-l-fl">{lang naspay:lang52}{$setextcredittitle}{lang naspay:lang61}</div>
+			<div class="tpay-inde-main-l-fl"><b>{eval echo getuserprofile('extcredits'.$setextcredit);}</b>{$setextcreditunit}</div>
+		</div>
+		<div class="tpay-inde-main-l-more">
+			<a href="home.php?mod=spacecp&ac=credit" target="_blank">{lang naspay:lang53}</a>
+		</div>
+	</div>
+	<div class="tpay-left-info-line">
+		<span class="tpay-left-top-icon"></span>
+		<span class="tpay-left-bottom-icon"></span>
+	</div>
+</div>

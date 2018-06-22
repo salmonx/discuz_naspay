@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2018-06-19 16:01]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[积分充值(naspay)]]></item>
+			<item id="identifier"><![CDATA[naspay]]></item>
+			<item id="description"><![CDATA[积分充值(naspay)]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[naspay/]]></item>
+			<item id="copyright"><![CDATA[947270280@qq.com]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[recharge]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[积分充值]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[details]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[用户订单]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="3">
+					<item id="name"><![CDATA[save_online]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[设置上链]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[3]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[NAS钱包账号(n1开头,35位)]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[address]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[充值积分类型]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[extcredit]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[积分兑换比例(1NAS可兑换的积分数量)]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ratio]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="Wait for payment"><![CDATA[等待付款]]></item>
+				<item id="Recharge success"><![CDATA[充值成功]]></item>
+				<item id="Order number"><![CDATA[订单号]]></item>
+				<item id="Commit time"><![CDATA[提交时间]]></item>
+				<item id="state"><![CDATA[状态]]></item>
+				<item id="Over Time"><![CDATA[完结时间]]></item>
+				<item id="user name"><![CDATA[用户名]]></item>
+				<item id="points"><![CDATA[积分]]></item>
+				<item id="Recharge amount"><![CDATA[充值数量]]></item>
+				<item id="Payment of NAS"><![CDATA[支付NAS]]></item>
+				<item id="NAS"><![CDATA[NAS]]></item>
+				<item id="Recharge record"><![CDATA[我的订单]]></item>
+				<item id="Integral recharge success"><![CDATA[积分充值成功，]]></item>
+				<item id="Your account has been deposited in the integral"><![CDATA[已存入您的积分账户，请您注意查收]]></item>
+				<item id="Integral recharge"><![CDATA[积分充值]]></item>
+				<item id="You do not have permission to use this function in the user group"><![CDATA[您所在用户组无权限使用该功能]]></item>
+				<item id="Recharge amount can not be less than"><![CDATA[充值数量不能小于]]></item>
+				<item id="Recharge amount can not be greater than"><![CDATA[充值数量不能大于]]></item>
+				<item id="lang49"><![CDATA[支付方式]]></item>
+				<item id="lang50"><![CDATA[操作]]></item>
+				<item id="lang51"><![CDATA[补单]]></item>
+				<item id="lang52"><![CDATA[订单已经支付]]></item>
+				<item id="lang53"><![CDATA[补单成功]]></item>
+				<item id="lang60"><![CDATA[用户]]></item>
+				<item id="lang61"><![CDATA[积分充值-]]></item>
+				<item id="lang65"><![CDATA[订单详情]]></item>
+				<item id="lang66"><![CDATA[后台补单]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="yuan"><![CDATA[]]></item>
+				<item id="Integral recharge"><![CDATA[积分充值]]></item>
+				<item id="Recharge record"><![CDATA[充值记录]]></item>
+				<item id="lang01"><![CDATA[单次]]></item>
+				<item id="lang011"><![CDATA[充值范围<b>]]></item>
+				<item id="lang02"><![CDATA[&nbsp;-&nbsp;]]></item>
+				<item id="lang03"><![CDATA[</b>之间，1NAS=]]></item>
+
+				<item id="lang05"><![CDATA[积分价格: 1NAS=]]></item>
+				<item id="lang06"><![CDATA[所需NAS: ]]></item>
+				<item id="lang07"><![CDATA[支付方式]]></item>
+				<item id="lang11"><![CDATA[温馨提示]]></item>
+				<item id="lang12"><![CDATA[确定]]></item>
+				<item id="lang21"><![CDATA[如果遇到付款成功但订单未显示支付成功，请您联系网站管理员或客服处理！或手动检查支付状态]]></item>
+				<item id="lang22"><![CDATA[提交时间]]></item>
+				<item id="lang26"><![CDATA[状态]]></item>
+				<item id="lang30"><![CDATA[充值成功]]></item>
+				<item id="lang31"><![CDATA[系统检测：未成功支付，请您在新窗口中继续完成支付]]></item>
+				<item id="lang32"><![CDATA[充值数量不能小于]]></item>
+				<item id="lang33"><![CDATA[充值数量不能大于]]></item>
+				<item id="lang49"><![CDATA[请输入需要充值的]]></item>
+				<item id="lang50"><![CDATA[我已支付]]></item>
+				<item id="lang51"><![CDATA[用户组：]]></item>
+				<item id="lang52"><![CDATA[拥有]]></item>
+				<item id="lang53"><![CDATA[查看更多积分]]></item>
+				<item id="lang54"><![CDATA[确定]]></item>
+				<item id="lang61"><![CDATA[：]]></item>
+				<item id="lang66"><![CDATA[数量]]></item>
+				<item id="lang67"><![CDATA[订单详情]]></item>
+				<item id="lang68"><![CDATA[我的订单]]></item>
+				<item id="lang69"><![CDATA[充值数量]]></item>
+				<item id="lang70"><![CDATA[支付金额]]></item>
+				<item id="lang71"><![CDATA[NAS]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

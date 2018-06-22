@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2016-12-14 11:03]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://dz-gbk.pay.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[»ý·Ö³äÖµ(thinfellPay)]]></item>
+			<item id="identifier"><![CDATA[yinxingfei_thinfellpay_client]]></item>
+			<item id="description"><![CDATA[»ý·Ö³äÖµ(thinfellPay)]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[yinxingfei_thinfellpay_client/]]></item>
+			<item id="copyright"><![CDATA[ÒüÐË·É]]></item>
+			<item id="version"><![CDATA[1.6.2]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[recharge]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[»ý·Ö³äÖµ]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[1]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[hook]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[1]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="2">
+					<item id="name"><![CDATA[details]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[ÓÃ»§¶©µ¥]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[2]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[Ð­Òé]]></item>
+				<item id="description"><![CDATA[ÉÌ»§µØÖ·(http://admin.thinfell.com/)]]></item>
+				<item id="variable"><![CDATA[open]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1 = Í¬Òâ
+2 = ¾Ü¾ø]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[Õ¾µãID]]></item>
+				<item id="description"><![CDATA[ÉêÇëµØÖ·(http://admin.thinfell.com/site/signup)]]></item>
+				<item id="variable"><![CDATA[appid]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[Õ¾µãÃÜÔ¿]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[secret]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[4vO-Q12aNOTv-j8HyvHf6i5hXLy8usG3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[ÔÊÐí³äÖµÓÃ»§×é]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[groups]]></item>
+				<item id="type"><![CDATA[groups]]></item>
+				<item id="extra"><![CDATA[]]></item>
+				<item id="__value">
+					<item id="0"><![CDATA[10]]></item>
+					<item id="1"><![CDATA[16]]></item>
+					<item id="2"><![CDATA[17]]></item>
+					<item id="3"><![CDATA[18]]></item>
+					<item id="4"><![CDATA[19]]></item>
+					<item id="5"><![CDATA[1]]></item>
+					<item id="6"><![CDATA[2]]></item>
+					<item id="7"><![CDATA[3]]></item>
+				</item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[³äÖµ±ÈÀý]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[ratio]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[³äÖµ»ý·Ö]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[extcredit]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[µ¥´Î×îÉÙ³äÖµ]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[min]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[µ¥´Î×î¶à³äÖµ]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[max]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[100]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[Ìæ»»³äÖµ]]></item>
+				<item id="description"><![CDATA[Ìæ»»Ô­À´ÏµÍ³µÄ³äÖµÁ´½Ó£¬×Ô¶¯Ìø×ªµ½thinfellPay³äÖµ]]></item>
+				<item id="variable"><![CDATA[replace]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[1 = ÊÇ
+2 = ·ñ]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="Wait for payment"><![CDATA[µÈ´ý¸¶¿î]]></item>
+				<item id="Recharge success"><![CDATA[³äÖµ³É¹¦]]></item>
+				<item id="Order number"><![CDATA[¶©µ¥ºÅ]]></item>
+				<item id="Commit time"><![CDATA[Ìá½»Ê±¼ä]]></item>
+				<item id="state"><![CDATA[×´Ì¬]]></item>
+				<item id="Over Time"><![CDATA[Íê½áÊ±¼ä]]></item>
+				<item id="user name"><![CDATA[ÓÃ»§Ãû]]></item>
+				<item id="points"><![CDATA[»ý·Ö]]></item>
+				<item id="Recharge amount"><![CDATA[³äÖµÊýÁ¿]]></item>
+				<item id="Payment of NAS"><![CDATA[Ö§¸¶NAS]]></item>
+				<item id="yuan"><![CDATA[Ôª]]></item>
+				<item id="Recharge record"><![CDATA[ÎÒµÄ¶©µ¥]]></item>
+				<item id="Integral recharge success"><![CDATA[»ý·Ö³äÖµ³É¹¦£¬]]></item>
+				<item id="Your account has been deposited in the integral"><![CDATA[ÒÑ´æÈëÄúµÄ»ý·ÖÕË»§£¬ÇëÄú×¢Òâ²éÊÕ]]></item>
+				<item id="Integral recharge"><![CDATA[»ý·Ö³äÖµ]]></item>
+				<item id="You do not have permission to use this function in the user group"><![CDATA[ÄúËùÔÚÓÃ»§×éÎÞÈ¨ÏÞÊ¹ÓÃ¸Ã¹¦ÄÜ]]></item>
+				<item id="Recharge amount can not be less than"><![CDATA[³äÖµÊýÁ¿²»ÄÜÐ¡ÓÚ]]></item>
+				<item id="Recharge amount can not be greater than"><![CDATA[³äÖµÊýÁ¿²»ÄÜ´óÓÚ]]></item>
+				<item id="lang49"><![CDATA[Ö§¸¶·½Ê½]]></item>
+				<item id="lang50"><![CDATA[²Ù×÷]]></item>
+				<item id="lang51"><![CDATA[²¹µ¥]]></item>
+				<item id="lang52"><![CDATA[¶©µ¥ÒÑ¾­Ö§¸¶]]></item>
+				<item id="lang53"><![CDATA[²¹µ¥³É¹¦]]></item>
+				<item id="lang60"><![CDATA[ÓÃ»§]]></item>
+				<item id="lang61"><![CDATA[»ý·Ö³äÖµ-]]></item>
+				<item id="lang65"><![CDATA[¶©µ¥ÏêÇé]]></item>
+				<item id="lang66"><![CDATA[ºóÌ¨²¹µ¥]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="yuan"><![CDATA[Ôª]]></item>
+				<item id="Integral recharge"><![CDATA[»ý·Ö³äÖµ]]></item>
+				<item id="Recharge record"><![CDATA[³äÖµ¼ÇÂ¼]]></item>
+				<item id="lang01"><![CDATA[µ¥´Î]]></item>
+				<item id="lang011"><![CDATA[³äÖµ·¶Î§<b>]]></item>
+				<item id="lang02"><![CDATA[&nbsp;-&nbsp;]]></item>
+				<item id="lang03"><![CDATA[</b>Ö®¼ä£¬1Ôª=]]></item>
+				<item id="lang06"><![CDATA[ËùÐèÈËÃñ±Ò]]></item>
+				<item id="lang07"><![CDATA[Ö§¸¶·½Ê½]]></item>
+				<item id="lang11"><![CDATA[ÎÂÜ°ÌáÊ¾]]></item>
+				<item id="lang12"><![CDATA[È·¶¨]]></item>
+				<item id="lang21"><![CDATA[Èç¹ûÓöµ½¸¶¿î³É¹¦µ«¶©µ¥Î´ÏÔÊ¾Ö§¸¶³É¹¦£¬ÇëÄúÁªÏµÍøÕ¾¹ÜÀíÔ±»ò¿Í·þ´¦Àí£¡»òÊÖ¶¯¼ì²éÖ§¸¶×´Ì¬]]></item>
+				<item id="lang22"><![CDATA[Ìá½»Ê±¼ä]]></item>
+				<item id="lang26"><![CDATA[×´Ì¬]]></item>
+				<item id="lang30"><![CDATA[³äÖµ³É¹¦]]></item>
+				<item id="lang31"><![CDATA[ÏµÍ³¼ì²â£ºÎ´³É¹¦Ö§¸¶£¬ÇëÄúÔÚÐÂ´°¿ÚÖÐ¼ÌÐøÍê³ÉÖ§¸¶]]></item>
+				<item id="lang32"><![CDATA[³äÖµÊýÁ¿²»ÄÜÐ¡ÓÚ]]></item>
+				<item id="lang33"><![CDATA[³äÖµÊýÁ¿²»ÄÜ´óÓÚ]]></item>
+				<item id="lang49"><![CDATA[ÇëÊäÈëÐèÒª³äÖµµÄ]]></item>
+				<item id="lang50"><![CDATA[Á¢¼´Ö§¸¶]]></item>
+				<item id="lang51"><![CDATA[ÓÃ»§×é£º]]></item>
+				<item id="lang52"><![CDATA[ÓµÓÐ]]></item>
+				<item id="lang53"><![CDATA[²é¿´¸ü¶à»ý·Ö]]></item>
+				<item id="lang61"><![CDATA[£º]]></item>
+				<item id="lang66"><![CDATA[ÊýÁ¿]]></item>
+				<item id="lang67"><![CDATA[¶©µ¥ÏêÇé]]></item>
+				<item id="lang68"><![CDATA[ÎÒµÄ¶©µ¥]]></item>
+				<item id="lang69"><![CDATA[³äÖµÊýÁ¿]]></item>
+				<item id="lang70"><![CDATA[Ö§¸¶½ð¶î]]></item>
+				<item id="lang71"><![CDATA[£¤]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+		<item id="uninstallfile"><![CDATA[uninstall.php]]></item>
+	</item>
+</root>

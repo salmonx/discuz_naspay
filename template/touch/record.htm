@@ -1,0 +1,66 @@
+<!--{template common/header}-->
+<header class="header">
+	<div class="nav">
+		<a onclick="history.go(-1)" class="z"><img src="static/image/mobile/images/icon_back.png" zsrc="static/image/mobile/images/icon_back.png" style="display: inline; visibility: visible;"></a>
+		<span class="category">
+            <span class="name">{lang naspay:lang68}</span>
+        </span>
+	</div>
+</header>
+<link rel="stylesheet" href="source/plugin/naspay/assets/css/weui.min.css?{VERHASH}" />
+<link rel="stylesheet" href="source/plugin/naspay/assets/css/touch_app.css?{VERHASH}" />
+<div class="tpay-inde-main">
+	<div class="wp">
+		<div class="tpay-inde-main-wp">
+			<div class="tpay-inde-main-r">
+					<ul class="tpay-inde-main-r-nav">
+						<li><a href="plugin.php?id=naspay:recharge&do=index" >{lang naspay:Integral recharge}</a></li>
+						<li class="on"><a href="plugin.php?id=naspay:recharge&do=record">{lang naspay:lang68}</a></li>
+					</ul>
+					<div class="tpay-inde-main-r-box-h">
+						<i class="weui-icon-info-circle" style="margin-top: -4px;"></i>{lang naspay:lang21}
+					</div>
+				{loop $list $k $v}
+				<br>
+				<div class="weui-form-preview">
+					<div class="weui-form-preview__hd">
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">{lang naspay:lang70}</label>
+							<em class="weui-form-preview__value">{lang naspay:lang71}{$v['fee']}</em>
+						</div>
+					</div>
+					<div class="weui-form-preview__bd">
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">{lang naspay:lang67}</label>
+							<span class="weui-form-preview__value">{$v['subject']}</span>
+						</div>
+					</div>
+					<div class="weui-form-preview__bd">
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">{lang naspay:lang22}</label>
+							<span class="weui-form-preview__value">{eval echo date("Y-m-d H:i:s",$v['creation_time']);}</span>
+						</div>
+					</div>
+					<div class="weui-form-preview__bd">
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">{lang naspay:lang26}</label>
+							<span class="weui-form-preview__value">{$stater[$v['state']]}</span>
+						</div>
+					</div>
+					<div class="weui-form-preview__bd">
+						<div class="weui-form-preview__item">
+							<label class="weui-form-preview__label">{lang naspay:lang07}</label>
+							<span class="weui-form-preview__value">{$v['paytype']}</span>
+						</div>
+					</div>
+				</div>
+				{/loop}
+				<div style="padding-top:10px;overflow: hidden;padding-bottom: 10px;">
+					{$multipage}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wp">
+<!--{template common/footer}-->

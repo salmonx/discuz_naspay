@@ -1,0 +1,146 @@
+<!--{template common/header}-->
+    <div id="pt" class="bm cl">
+        <div class="z">
+            <a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php">{$_G[setting][navs][2][navname]}</a><em>&raquo;</em><a href="plugin.php?id=naspay:recharge">{lang naspay:Integral recharge}</a>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="source/plugin/naspay/assets/css/app.css?{VERHASH}" />
+<div class="tpay-inde-main">
+    <div class="wp">
+        <div class="tpay-inde-main-wp">
+            <!--{subtemplate naspay:thinfellpay_left}-->
+            <form method="post" id="thinfell_pay_form" autocomplete="off" target="_blank">
+                <input type="hidden" name="formhash" value="{FORMHASH}" />
+                <input type="hidden" name="address" id="address" value="{$address}">
+                <input type="hidden" name="orderid" id="orderid" value="{$orderid}">
+                <input type="hidden" name="fee" id="fee" value="{$fee}">
+                <input type="hidden" name="number" id="number" value="{$number}">
+
+                <input type="hidden" name="tpaysubmit" value="true">
+                <div class="tpay-inde-main-r">
+                    <ul class="tpay-inde-main-r-nav">
+                        <li class="on"><a href="plugin.php?id=naspay:recharge&do=index" >{lang naspay:Integral recharge}</a></li>
+                        <li ><a href="plugin.php?id=naspay:recharge&do=record">{lang naspay:lang68}</a></li>
+                    </ul>
+                    <div class="tpay-inde-main-r-box">
+                        <div class="tpay-inde-main-r-box-h">
+                            积分数量：<span>{$number}</span>
+                            订单金额：<span>{$fee}</span> NAS
+                        </div>
+                        <div>
+                            <div>该页面会自动唤起星云app进行支付</div>
+                            <!--
+                            <div>如果您没有安装app，可以保存二维码<span id="show_qrcode" onclick="show_qr();">(点击显示)</span>找人代付</div>-->
+                            <div id="qrcode_area" style="display: none">
+                                <canvas id="qrcode" width="150" height="150"></canvas>
+                            </div>
+                            <div>请您在支付成功后点击【我已支付】完成充值过程</div>
+                            <div><a href="javascript:;" class="tpay-button" onclick="return checkepayok();"><i class="tpay-leftBorder"></i>我已支付</a>
+                            </div>
+                            <br>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="wp">
+<!--{template common/footer}-->
+
+
+<script type="text/javascript" src="source/plugin/naspay/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="source/plugin/naspay/assets/js/nebulas.js"></script>
+<script type="text/javascript" src="source/plugin/naspay/assets/js/nebPay.js"></script>
+<script type="text/javascript" src="source/plugin/naspay/assets/js/myapp.js"></script>
+<script type="text/javascript" src="source/plugin/naspay/assets/js/bignumber.js"></script>
+
+
+<script type="text/javascript">
+
+    "use strict";
+    var jq = $.noConflict();
+
+    var value = "0";
+    var nonce = "0";
+    var gas_price = "1000000";
+    var gas_limit = "2000000";
+
+    var nebulas = require("nebulas");
+    var neb = new nebulas.Neb();
+    var NebPay = require("nebpay");
+    var nebPay = new NebPay();
+
+    var intervalQuery;
+    var callbackUrl = 'https://mainnet.nebulas.io';
+
+
+    function init(){
+
+        var callFunction = "pay";
+        var orderid = document.getElementById("orderid").value;
+        var create_id = document.getElementById("address").value;
+        var amount = document.getElementById("number").value;
+        var value = document.getElementById("fee").value;
+
+        var callArgs = JSON.stringify([orderid, create_id, amount]);
+        console.log(callArgs)
+
+        var options = {
+            callback: callbackUrl,
+            listener: cb_create_credit,
+
+            extension: {
+                openExtension: true //set if need show extension payment mode
+            },
+            mobile: {
+                showInstallTip: true,
+                installTip: undefined // string of install NASNano tip
+            },
+            contract: {
+                'function': callFunction,
+                'callArgs': callArgs,
+            }
+        }
+        var serialNumber = nebPay.call(dappAddress, value, callFunction, callArgs, {
+            qrcode: {
+                showQRCode: false,
+                container: qrcode,
+                completeTip: false, // 完成支付提示
+                cancelTip: false // 取消支付提示
+            }
+        });
+        console.log(serialNumber);
+
+    }
+
+    function cb_create_credit(resp){
+        alert("支付中...支付成功后请点击【我已支付】完成充值过程");
+        console.log(resp);
+    }
+
+
+    init();
+
+
+    function checkepayok(){
+        var orderid = document.getElementById('orderid').value;
+        var url = './plugin.php?id=naspay:recharge&do=payok&orderid=' + orderid;
+
+        jq.get(url, function(data){
+            var data = JSON.parse(data);
+            if (data['code'] !== 200) {
+                alert(data['message']);
+                return false;
+
+            }else{
+                alert("支付成功！");
+                window.location = './home.php?mod=spacecp&ac=credit&op=base';
+            }
+        });
+    }
+
+    function show_qr(){
+        jq("#qrcode_area").hide().show();
+    }
+</script>

@@ -1,0 +1,61 @@
+<!--{template common/header}-->
+	<div id="pt" class="bm cl">
+		<div class="z">
+			<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php">{$_G[setting][navs][2][navname]}</a><em>&raquo;</em><a href="plugin.php?id=naspay:recharge">{lang naspay:Integral recharge}</a>
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" href="source/plugin/naspay/assets/css/app.css?{VERHASH}" />
+<div class="tpay-inde-main">
+	<div class="wp">
+		<div class="tpay-inde-main-wp">
+			<!--{subtemplate naspay:thinfellpay_left}-->
+			<form method="post" id="thinfell_pay_form" autocomplete="off" target="_blank">
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<input type="hidden" name="ratio" id="ratio" value="{$setratio}" />
+				<input type="hidden" name="min" id="min" value="0" />
+				<input type="hidden" name="max" id="max" value="1000000" />
+				<input type="hidden" name="tpaysubmit" value="true">
+				<div class="tpay-inde-main-r">
+					<ul class="tpay-inde-main-r-nav">
+						<li class="on"><a href="plugin.php?id=naspay:recharge&do=index" >{lang naspay:Integral recharge}</a></li>
+						<li ><a href="plugin.php?id=naspay:recharge&do=record">{lang naspay:lang68}</a></li>
+					</ul>
+                    <div class="tpay-inde-main-r-box">
+                        <div class="tpay-inde-main-r-box-h">
+                        帮助说明: 充值前请先安装钱包APP<a href="https://nano.nebulas.io/" target="_blank">（下载）</a><br>
+                        充值地址: {$address}<br>
+                        {lang naspay:lang05}{$setratio}{$setextcredittitle}
+                    </div>
+						<div>
+							<input type="text" name="number" id="number" class="tpay-input" autocomplete="off" autocapitalize="off" placeholder="{lang naspay:lang49}{$setextcredittitle}{lang naspay:lang66}">
+						</div>
+						<div class="tpay-tprmb">
+							<span id="tprmb"></span>
+						</div>
+
+						<div>
+							<a href="javascript:;" class="tpay-button" onclick="return checkepay();"><i class="tpay-leftBorder"></i>立即充值</a>
+						</div>
+					</div>
+					<script>var lang06 = '{lang naspay:lang06}',lang_yuan = '{lang naspay:yuan}',lang30 = '{lang naspay:lang30}',lang31 = '{lang naspay:lang31}',lang32 = '{lang naspay:lang32}',lang33 = '{lang naspay:lang33}';</script>
+					<script src="source/plugin/naspay/assets/js/jquery.min.js" type="text/javascript"></script>
+					<script type="text/javascript" src="source/plugin/naspay/assets/js/jquery.placeholder.min.js"></script>
+					<script src="source/plugin/naspay/assets/js/app.js?{VERHASH}" type="text/javascript"></script>
+					<div class="tpay_dialog_alert">
+						<div class="tpay_mask"></div>
+						<div class="tpay_dialog">
+							<div class="tpay_dialog_hd"><strong class="tpay_dialog_title">{lang naspay:lang11}</strong></div>
+							<div class="tpay_dialog_bd"></div>
+							<div class="tpay_dialog_ft">
+								<a href="javascript:;" class="tpay_dialog_ft_primary" id="tp_queding">{lang naspay:lang12}</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="wp">
+<!--{template common/footer}-->

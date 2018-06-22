@@ -1,0 +1,522 @@
+.tpay_dialog_alert,.tpay_dialog_confirm {
+    display:none;
+}
+.tpay-box-main {
+    background-color: #fff;
+    border-top: #6DCA90 solid 2px;
+    border-bottom: #6DCA90 solid 2px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.tpay_mask {
+    position:fixed;
+    z-index:9999;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:#000;
+    /* older safari/Chrome browsers */
+    -webkit-opacity:0.6;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity:0.6;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity:0.6;
+    /* IE9 + etc...modern browsers */
+    opacity:.6;
+    /* IE 4-9 */
+    filter:alpha(opacity=60);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+}
+.tpay_dialog {
+    min-height: 140px;
+    z-index: 10001;
+    position: fixed;
+    width: 80%;
+    max-width: 300px;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.tpay_dialog_hd {
+    padding:1.2em 0 .5em;
+}
+.tpay_dialog_ft {
+    position:absolute;
+    line-height:42px;
+    bottom:0px;
+    left:0px;
+    font-size:17px;
+    border-top:1px solid #D5D5D6;
+    overflow:hidden;
+    width:100%;
+}
+.tpay_dialog_bd {
+    padding:0 20px;
+    font-size:15px;
+    color:#888;
+}
+.tpay_dialog_title {
+    font-weight:400;
+    font-size:17px;
+}
+.tpay_dialog_ft a {
+    display:block;
+    text-decoration:none;
+}
+.tpay_dialog_ft .tpay_dialog_ft_default {
+    color:#353535;
+}
+.tpay_dialog_ft .tpay_dialog_ft_primary {
+    color:#0BB20C;
+}
+.tpay_dialog_confirm .tpay_dialog_ft_default {
+    border-right:1px solid #D5D5D6;
+    float:left;
+    width:187px;
+}
+.tpay_dialog_confirm .tpay_dialog_ft_primary {
+    float:right;
+    width:187px;
+}
+.tppaytype {
+}.tppaytype li {
+     float:left;
+     padding-right:15px;
+ }
+.tppaytype p {
+    text-align:center;
+}
+.tpay-main {
+    width:100%;
+    margin:0 auto;
+}
+.tpay-top {
+    overflow:hidden;
+    padding:15px 0px;
+}
+.tpay-h1 {
+    float:left;
+    height:32px;
+    line-height:32px;
+    padding:0 15px;
+    border-left:1px solid #dbdbdb;
+    font-size:24px;
+    margin-top:8px;
+}
+.tpay-content {
+    overflow:hidden;
+    background:#EBF7E7;
+    border-bottom:3px solid #C7E6BF;
+    padding:20px 30px;
+    border-right:none;
+    border-left:none;
+    line-height:30px;
+    height:30px;
+}
+.tpay-content-l {
+    float:left;
+}
+.tpay-content-l-id {
+}.tpay-content-l-title {
+     font-size:16px;
+ }
+.tpay-content-r {
+    float:right;
+    overflow:hidden;
+    font-size:16px;
+}
+.tpay-fee {
+    float:left;
+    font-weight:bold;
+}
+.tpay-unit {
+    float:left;
+}
+.tpay-unit b {
+    color:red;
+    font-size:22px;
+    padding-right:5px;
+    font-family:"Microsoft YaHei";
+}
+.tpay-choose-main {
+    padding:20px 0px;
+}
+.tpay-choose {
+
+}
+.tpay-choose-top {
+    overflow:hidden;
+    background:#52bf63;
+    border-radius:5px 5px 0px 0px;
+    height:40px;
+    padding:10px 20px 0px 20px;
+}
+.tpay-choose-item {
+    border:1px solid #E0E0E0;
+    overflow:hidden;
+    padding:20px 35px;
+    border-top:none;
+}
+.tpay-nav {
+    float:left;
+}
+.tpay-nav a {
+    display:block;
+    padding:0px 25px;
+    height:40px;
+    line-height:40px;
+    color:#FFF;
+    text-align:center;
+    border-radius:5px 5px 0px 0px;
+    font-size:14px;
+    font-weight:bold;
+}
+.tpay-nav a:hover {
+    text-decoration:none;
+}
+.tpay-nav.on a {
+    background:#fff;
+    color:#52bf63;
+}
+.tpay-paytype {
+    float:left;
+    width:190px;
+    overflow:hidden;
+    position:relative;
+    margin:10px 2px 15px 0px;
+    padding-right:30px;
+}
+.tpay-paytype img {
+    height:45px;
+    padding:1px;
+    border-radius:5px;
+    width:160px;
+}
+.tpay-paytype label {
+    display:block;
+    padding-left:30px;
+}
+.tpay-paytype input {
+    top:13px;
+    left:4px;
+    position:absolute;
+    width:15px;
+    height:15px;
+}
+.tpay-paytype.on {
+    background:url(../img/bg.png) no-repeat 0px 0px;
+}
+.tpay-logo {
+    float:left;
+    display:block;
+    width:160px;
+    height:40px;
+    margin:0px 15px 0 0;
+    background:url(../img/logo.png) no-repeat;
+}
+.tpay-middle {
+    padding:10px 10px 40px 10px;
+    border:2px solid #FFA200;
+    border-radius:4px;
+}
+.tpay-haschoose {
+    padding:10px 30px;
+}
+.tpay-haschoose-title {
+    font-size:14px;
+    padding:10px 0px 20px 0px;
+}
+.tpay-haschoose-main {
+    overflow:hidden;
+}
+.tpay-haschoose-typelist {
+    float:left;
+    border-right:2px solid #D6D6D6;
+    margin-right:35px;
+    padding-right:33px;
+    padding-top:8px;
+    padding-bottom:7px;
+}
+.tpay-haschoose-typelist span {
+    background:#52bf63;
+    color:#fff;
+    padding:5px 10px;
+    display:block;
+    height:24px;
+    line-height:24px;
+    font-size:14px;
+}
+.tpay-haschoose-typedo {
+    float:left;
+}
+.tpay-haschoose-typedo img{
+    width:160px;
+    height:45px;
+}
+.tpay-haschoose-submit {
+    float:right;
+    padding-top:8px;
+}
+.tpay-haschoose-submit button {
+    background: #FF6000;
+    color: #fff;
+    display: block;
+    padding: 5px 24px;
+    border-radius: 4px;
+    height: 34px;
+    line-height: 24px;
+    font-size: 14px;
+    border: none;
+}
+.tpay-haschoose-submit button:hover {
+    text-decoration:none;
+    background:#DE5400;
+}
+.tpay-left-info-line {
+    position:absolute;
+    height:360px;
+    right:0;
+    top:0;
+    border-left:1px dotted #ddd;
+    z-index:1;
+}
+.tpay-left-info-line .tpay-left-top-icon,.tpay-left-info-line .tpay-left-bottom-icon {
+    display:block;
+    position:absolute;
+    overflow:hidden;
+    width:18px;
+    height:8px;
+    left:-9px;
+}
+.tpay-left-info-line .tpay-left-top-icon {
+    top:0;
+    background:url(../img/info-top.png) no-repeat;
+}
+.tpay-left-info-line .tpay-left-bottom-icon {
+    bottom:0;
+    background:url(../img/info-bottom.png) no-repeat;
+}
+.tpay-left-mask {
+    background:url(../img/myjd-bg.png) no-repeat;
+    width:104px;
+    height:104px;
+    position:absolute;
+    left:28px;
+    top:22px;
+    z-index:201;
+}
+.tpay-button {
+    position:relative;
+    display:inline-block;
+    margin-left:2px;
+    height:37px;
+    line-height:37px;
+    padding:0px 25px;
+    margin-top:20px;
+    background:url(../img/icons.png) no-repeat;
+    background-position:right -179px;
+    color:#FFF !important;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:14px;
+}
+.tpay-leftBorder {
+    position:absolute;
+    left:-2px;
+    top:0px;
+    width:2px;
+    height:37px;
+    background:url(../img/icons.png) no-repeat;
+    background-position:0px -142px;
+}
+.tpay-button:hover {
+    background-position:right -253px;
+    text-decoration:none;
+}
+.tpay-button:hover .tpay-leftBorder {
+    background-position:0px -216px;
+}
+.tpay-input {
+    width:364px;
+    height:50px;
+    padding-left:12px;
+    line-height:50px;
+    transition:none;
+    font-size:16px;
+    box-shadow:inset 1px 1px 3px #ECECEC;
+    vertical-align:middle;
+    border:#DADADA solid 1px;
+    font-family:Arial,Helvetica;
+    outline:none;
+    color: #A0A0A0;
+}
+.tpay-input:focus {
+    width:362px;
+    height:48px;
+    border-width:2px;
+    border-color:#5AC66F;
+}
+.tpay-inde-main {
+    background-color: #f8f8f8;
+}
+.tpay-inde-main-wp {
+    overflow:hidden;
+    position:relative;
+}
+.tpay-inde-main-r {
+
+}
+.tpay-inde-main-r-nav {
+    border-bottom:#E6E7E8 solid 1px;
+    height:43px;
+}
+.tpay-inde-main-r-nav li {
+    position:relative;
+    bottom:-1px;
+    float:left;
+    display:inline;
+    margin-left:30px;
+}
+.tpay-inde-main-r-nav li a {
+    color:#666;
+    height:42px;
+    line-height:42px;
+    font-weight:bold;
+    font-size:14px;
+    display:block;
+}
+.tpay-inde-main-r-nav li.on, .tpay-inde-main-r-nav li:hover {
+    border-bottom:#65C476 solid 1px;
+}
+.tpay-inde-main-r-nav li a:hover {
+    text-decoration:none;
+    color:#65C476;
+}
+.tpay-inde-main-r-nav li.on a {
+    color:#65C476;
+}
+.tpay-inde-main-r-box {
+
+}
+.tpay-inde-main-r-box-h {
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 15px;
+    background: #fff;
+    line-height: 28px;
+}
+.tpay-inde-main-l {
+    position:absolute;
+    left:0px;
+    top:30px;
+    width:180px;
+    height:316px;
+    padding:22px 30px 22px 30px;
+    background:#fff;
+}
+.tpay-inde-main-l-avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.tpay-inde-main-l-avatar img {
+    width: 100px;
+}
+.tpay-inde-main-l-box {
+    float:left;
+    padding-left:15px;
+    padding-top:10px;
+}
+.tpay-inde-main-l-username {
+    padding-bottom:5px;
+}
+.tpay-inde-main-l-username a {
+    font-size:18px;
+    line-height:28px;
+    height:28px;
+}
+.tpay-inde-main-l-group {
+    overflow:hidden;
+    padding-bottom:10px;
+    font-size:12px;
+}
+.tpay-inde-main-l-fl {
+    float:left;
+}
+.tpay-inde-main-l-credit {
+    overflow:hidden;
+    padding-bottom:10px;
+    font-size:16px;
+}
+.tpay-inde-main-l-more {
+    padding-bottom:10px;
+}
+.tpay-inde-main-l-more a {
+    color:#888;
+}
+.tpay-tprmb {
+    padding: 5px 0px 0px 0px;
+    color: #666;
+}
+.tp-check-box {
+    height: 110px;
+    line-height: 24px;
+    font-size: 17px;
+    text-align: center;
+    font-weight:bold;
+    color:red;
+}
+.tp-check-box-bottom {
+    overflow:hidden;
+}
+.tp-check-box-bottom-cg {
+    float:left;
+    border-left: 1px solid #D5D5D6;
+    width: 224px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-top: 1px solid #D5D5D6;
+    color: #0BB20C;font-size: 17px;
+}
+.tp-check-box-bottom-cx {
+    float:right;
+    border-left: 1px solid #D5D5D6;
+    width: 224px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-top: 1px solid #D5D5D6;
+    font-size: 17px;
+}
+.tp-check-box-bottom-cx:hover, .tp-check-box-bottom-cg:hover {
+    text-decoration:none;
+    background-color: #EEE;
+    font-weight:bold;
+}
+.tpay-inde-main .tbmu {
+    border-bottom: none!important;
+}
+.tpay-inde-main .dt {
+    border-top:none!important;
+}
+.tpay-inde-main .dt td, .tpay-inde-main .dt th {
+    padding: 7px 4px;
+    border-bottom: none;
+    color: #666;
+    text-align: center;
+}
+.tpay-inde-main .dt td {
+    padding: 15px 4px;
+    border-bottom: none;
+    color: #666;
+}
