@@ -23,3 +23,11 @@
 
 ### 过程图解:
 * 请看pics目录下截图
+i![1](https://raw.githubusercontent.com/salmonx/naspay/master/pics/1.png)
+i![2](https://raw.githubusercontent.com/salmonx/naspay/master/pics/2.png)
+i![3](https://raw.githubusercontent.com/salmonx/naspay/master/pics/3.png)
+i![4](https://raw.githubusercontent.com/salmonx/naspay/master/pics/4.png)
+i![5](https://raw.githubusercontent.com/salmonx/naspay/master/pics/5.png)
+i![6](https://raw.githubusercontent.com/salmonx/naspay/master/pics/6.png)
+i![7](https://raw.githubusercontent.com/salmonx/naspay/master/pics/7.png)
+
