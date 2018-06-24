@@ -23,11 +23,16 @@
 
 ### 过程图解:
 * 请看pics目录下截图
-i![1](https://raw.githubusercontent.com/salmonx/naspay/master/pics/1.png)
-i![2](https://raw.githubusercontent.com/salmonx/naspay/master/pics/2.png)
-i![3](https://raw.githubusercontent.com/salmonx/naspay/master/pics/3.png)
-i![4](https://raw.githubusercontent.com/salmonx/naspay/master/pics/4.png)
-i![5](https://raw.githubusercontent.com/salmonx/naspay/master/pics/5.png)
-i![6](https://raw.githubusercontent.com/salmonx/naspay/master/pics/6.png)
-i![7](https://raw.githubusercontent.com/salmonx/naspay/master/pics/7.png)
+1. 站长后台安装启用插件后 进入插件页面配置钱包账号,积分类型,兑换比例
+![1](https://raw.githubusercontent.com/salmonx/naspay/master/pics/1.png)
+2. 配置完成后 站长需要将配置保存到区块链上
+![2](https://raw.githubusercontent.com/salmonx/naspay/master/pics/2.png)
+![3](https://raw.githubusercontent.com/salmonx/naspay/master/pics/3.png)
+3. 配置结束后 前台用户即可点击"积分充值"进行充值
+![4](https://raw.githubusercontent.com/salmonx/naspay/master/pics/4.png)
+![5](https://raw.githubusercontent.com/salmonx/naspay/master/pics/5.png)
+4. 充值成功后 用户将会收到通知, 并在"积分"栏目可以看到充值记录
+![6](https://raw.githubusercontent.com/salmonx/naspay/master/pics/7.png)
+5. 站长同样可以在后头看到充值记录 并可以进行补单等操作
+![7](https://raw.githubusercontent.com/salmonx/naspay/master/pics/6.png)
 
